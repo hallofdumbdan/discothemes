@@ -1,0 +1,32 @@
+/* Red Links and Embedded Elements Theme */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+:root {
+    --link-color: #ff0000; /* Red Color */
+}
+
+/* Links */
+a {
+    color: var(--link-color) !important;
+}
+
+/* Embedded elements */
+.embedTitle, .embedDescription, .embedFieldName, .embedFieldValue, .embedFooterText, .embedAuthorName, .embedProviderName, .embedProviderIcon, .embedThumbnail, .embedImage {
+    color: var(--link-color) !important;
+    fill: var(--link-color) !important;
+}
+
+/* Link hover effect */
+a:hover, .embedTitle:hover, .embedDescription:hover, .embedFieldName:hover, .embedFieldValue:hover, .embedFooterText:hover, .embedAuthorName:hover, .embedProviderName:hover {
+    text-decoration: underline;
+}
+
+/* Icons in embeds */
+svg path {
+    fill: var(--link-color) !important;
+}
+
+/* Adjusting for different states and classes */
+a:visited, a:active, .embedTitle:visited, .embedTitle:active, .embedDescription:visited, .embedDescription:active, .embedFieldName:visited, .embedFieldName:active, .embedFieldValue:visited, .embedFieldValue:active, .embedFooterText:visited, .embedFooterText:active, .embedAuthorName:visited, .embedAuthorName:active, .embedProviderName:visited, .embedProviderName:active {
+    color: var(--link-color) !important;
+}
