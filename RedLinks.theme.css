@@ -6,32 +6,54 @@
     --embed-icon-color: #ff0000; /* Red Color */
 }
 
-/* Embedded elements */
-.embedTitle, .embedDescription, .embedFieldName, .embedFieldValue, .embedFooterText, .embedAuthorName, .embedProviderName {
-    color: var(--embed-link-color) !important;
-}
-
-/* Icons in embeds */
-.embedAuthorIcon, .embedFooterIcon, .embedProviderIcon, .embedThumbnail, .embedImage, .embedRichVideo-thumb, .embedRichVideo-icon {
-    fill: var(--embed-icon-color) !important;
-}
-
-/* Ensuring that links within embeds are targeted */
-.embedTitle a, .embedDescription a, .embedFieldName a, .embedFieldValue a, .embedFooterText a, .embedAuthorName a, .embedProviderName a {
-    color: var(--embed-link-color) !important;
-}
-
-/* Hover effect for links within embeds */
-.embedTitle a:hover, .embedDescription a:hover, .embedFieldName a:hover, .embedFieldValue a:hover, .embedFooterText a:hover, .embedAuthorName a:hover, .embedProviderName a:hover {
-    text-decoration: underline;
-}
-
-/* Link to the embed itself */
+/* Embedded elements text and links */
+.embedTitle, 
+.embedDescription, 
+.embedFieldName, 
+.embedFieldValue, 
+.embedFooterText, 
+.embedAuthorName, 
+.embedProviderName, 
 a.embedTitle {
     color: var(--embed-link-color) !important;
 }
 
-/* Hover effect for link to the embed itself */
-a.embedTitle:hover {
+/* Ensuring links within embeds are also targeted */
+.embedTitle a, 
+.embedDescription a, 
+.embedFieldName a, 
+.embedFieldValue a, 
+.embedFooterText a, 
+.embedAuthorName a, 
+.embedProviderName a {
+    color: var(--embed-link-color) !important;
+}
+
+/* Icons in embeds */
+.embedAuthorIcon, 
+.embedFooterIcon, 
+.embedProviderIcon, 
+.embedThumbnail, 
+.embedImage, 
+.embedRichVideo-thumb, 
+.embedRichVideo-icon,
+svg.embedAuthorIcon path, 
+svg.embedFooterIcon path, 
+svg.embedProviderIcon path, 
+svg.embedThumbnail path, 
+svg.embedImage path, 
+svg.embedRichVideo-thumb path, 
+svg.embedRichVideo-icon path {
+    fill: var(--embed-icon-color) !important;
+}
+
+/* Hover effect for links within embeds */
+.embedTitle a:hover, 
+.embedDescription a:hover, 
+.embedFieldName a:hover, 
+.embedFieldValue a:hover, 
+.embedFooterText a:hover, 
+.embedAuthorName a:hover, 
+.embedProviderName a:hover {
     text-decoration: underline;
 }
