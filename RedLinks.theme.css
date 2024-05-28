@@ -1,32 +1,37 @@
-/* Red Links and Embedded Elements Theme */
+/* Red Embeds Theme */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
 :root {
-    --link-color: #ff0000; /* Red Color */
-}
-
-/* Links */
-a {
-    color: var(--link-color) !important;
+    --embed-link-color: #ff0000; /* Red Color */
+    --embed-icon-color: #8b0000; /* Dark Red Color */
 }
 
 /* Embedded elements */
-.embedTitle, .embedDescription, .embedFieldName, .embedFieldValue, .embedFooterText, .embedAuthorName, .embedProviderName, .embedProviderIcon, .embedThumbnail, .embedImage {
-    color: var(--link-color) !important;
-    fill: var(--link-color) !important;
-}
-
-/* Link hover effect */
-a:hover, .embedTitle:hover, .embedDescription:hover, .embedFieldName:hover, .embedFieldValue:hover, .embedFooterText:hover, .embedAuthorName:hover, .embedProviderName:hover {
-    text-decoration: underline;
+.embedTitle, .embedDescription, .embedFieldName, .embedFieldValue, .embedFooterText, .embedAuthorName, .embedProviderName {
+    color: var(--embed-link-color) !important;
 }
 
 /* Icons in embeds */
-svg path {
-    fill: var(--link-color) !important;
+.embedAuthorIcon, .embedFooterIcon, .embedProviderIcon, .embedThumbnail, .embedImage {
+    fill: var(--embed-icon-color) !important;
 }
 
-/* Adjusting for different states and classes */
-a:visited, a:active, .embedTitle:visited, .embedTitle:active, .embedDescription:visited, .embedDescription:active, .embedFieldName:visited, .embedFieldName:active, .embedFieldValue:visited, .embedFieldValue:active, .embedFooterText:visited, .embedFooterText:active, .embedAuthorName:visited, .embedAuthorName:active, .embedProviderName:visited, .embedProviderName:active {
-    color: var(--link-color) !important;
+/* Link hover effect within embeds */
+.embedTitle:hover, .embedDescription:hover, .embedFieldName:hover, .embedFieldValue:hover, .embedFooterText:hover, .embedAuthorName:hover, .embedProviderName:hover {
+    text-decoration: underline;
+}
+
+/* Ensuring that links within embeds are targeted */
+.embedTitle a, .embedDescription a, .embedFieldName a, .embedFieldValue a, .embedFooterText a, .embedAuthorName a, .embedProviderName a {
+    color: var(--embed-link-color) !important;
+}
+
+/* Hover effect for links within embeds */
+.embedTitle a:hover, .embedDescription a:hover, .embedFieldName a:hover, .embedFieldValue a:hover, .embedFooterText a:hover, .embedAuthorName a:hover, .embedProviderName a:hover {
+    text-decoration: underline;
+}
+
+/* Ensuring icon colors are applied */
+svg path {
+    fill: var(--embed-icon-color) !important;
 }
