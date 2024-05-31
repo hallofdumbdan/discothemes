@@ -1,0 +1,31 @@
+/**
+ * @name PurplePingTheme
+ * @version 1.0
+ * @description Changes red ping-related elements to purple (#6402d4).
+ * @author YourName
+ */
+
+/* Change the notification badge color */
+.badge-3KKiIo {
+    background-color: #6402d4 !important;
+}
+
+/* Change the red line indicating unread pings in a chat */
+.divider-3_HH5L {
+    background-color: #6402d4 !important;
+}
+
+/* Change the color of the ping indicator (red dot) */
+.guild-3_YK1N .wrapper-25eVIn::before {
+    background-color: #6402d4 !important;
+}
+
+/* Change the color of unread pings in the chat list */
+.unread-25hwAS {
+    background-color: #6402d4 !important;
+}
+
+/* Change the text color of unread pings in the chat list */
+.unread-25hwAS .badge-3KKiIo {
+    color: #6402d4 !important;
+}
