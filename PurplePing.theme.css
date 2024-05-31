@@ -1,31 +1,65 @@
-/**
- * @name PurplePingTheme
- * @version 1.0
- * @description Changes red ping-related elements to purple (#6402d4).
- * @author YourName
- */
+/* Red Embeds Only Theme */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
-/* Change the notification badge color */
-.badge-3KKiIo {
-    background-color: #6402d4 !important;
+:root {
+    --embed-link-color: #ff0000; /* Red Color */
+    --embed-icon-color: #ff0000; /* Red Color */
 }
 
-/* Change the red line indicating unread pings in a chat */
-.divider-3_HH5L {
-    background-color: #6402d4 !important;
+/* Embedded elements text and links */
+.embedTitle, 
+.embedDescription, 
+.embedFieldName, 
+.embedFieldValue, 
+.embedFooterText, 
+.embedAuthorName, 
+.embedProviderName, 
+a.embedTitle {
+    color: var(--embed-link-color) !important;
 }
 
-/* Change the color of the ping indicator (red dot) */
-.guild-3_YK1N .wrapper-25eVIn::before {
-    background-color: #6402d4 !important;
+/* Ensuring links within embeds are also targeted */
+.embedTitle a, 
+.embedDescription a, 
+.embedFieldName a, 
+.embedFieldValue a, 
+.embedFooterText a, 
+.embedAuthorName a, 
+.embedProviderName a {
+    color: var(--embed-link-color) !important;
 }
 
-/* Change the color of unread pings in the chat list */
-.unread-25hwAS {
-    background-color: #6402d4 !important;
+/* Icons in embeds */
+.embedAuthorIcon, 
+.embedFooterIcon, 
+.embedProviderIcon, 
+.embedThumbnail, 
+.embedImage, 
+.embedRichVideo-thumb, 
+.embedRichVideo-icon,
+svg.embedAuthorIcon path, 
+svg.embedFooterIcon path, 
+svg.embedProviderIcon path, 
+svg.embedThumbnail path, 
+svg.embedImage path, 
+svg.embedRichVideo-thumb path, 
+svg.embedRichVideo-icon path {
+    fill: var(--embed-icon-color) !important;
 }
 
-/* Change the text color of unread pings in the chat list */
-.unread-25hwAS .badge-3KKiIo {
-    color: #6402d4 !important;
+/* Hover effect for links within embeds */
+.embedTitle a:hover, 
+.embedDescription a:hover, 
+.embedFieldName a:hover, 
+.embedFieldValue a:hover, 
+.embedFooterText a:hover, 
+.embedAuthorName a:hover, 
+.embedProviderName a:hover {
+    text-decoration: underline;
+}
+
+/* Exclude NEW MESSAGE red line */
+.new-messages-bar {
+    background-color: initial !important;
+    color: initial !important;
 }
